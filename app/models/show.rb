@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
      hash = {}
      self.characters.each do |item|
 
-       hash = {name: item.actor.first_name + " " item.actor.last_name}
+       hash = {name: item.actor.first_name + " " + item.actor.last_name}
        binding.pry
      end
    end
