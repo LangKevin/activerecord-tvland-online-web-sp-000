@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
    belongs_to :network
    def actors_list
      hash = {}
-     self.characters.each |item|
+     self.characters.each do |item|
       #  binding.pry
       #  hash = {name: item.actor.first_name + item.actor.last_name}
      end
