@@ -8,6 +8,7 @@ class Show < ActiveRecord::Base
        hash = {name: item.actor.first_name + " " + item.actor.last_name}
        hash.values
        binding.pry
+       break
      end
    end
 end
