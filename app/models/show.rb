@@ -1,3 +1,4 @@
 class Show < ActiveRecord::Base
-   belongs_to Network  
+   has_many :characters
+   belongs_to :network  
 end
